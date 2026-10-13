@@ -1,0 +1,262 @@
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\definecolor{youtubeRed}{RGB}{255, 0, 0}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{fontawesome}
+
+\usetikzlibrary{svg.path}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titrule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\[2pt]
+      \textit{\large#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+{\Huge \scshape SWETANK KUMAR MISHRA}
+
+\vspace{12pt}
+
+\small
+\href{tel:+919236504416}{\faPhone\ +91-9236504416} \ \ \textemdash \ \ 
+\href{mailto:swetmishra083@gmail.com}{\faEnvelope\ swetmishra083@gmail.com} \ \ \textemdash \ \ 
+\href{https://linkedin.com/in/swetank-kumar-mishra}{\faLinkedin\ LinkedIn} \ \ \textemdash \ \ 
+\href{https://github.com/swetank-mishra}{\faGithub\ GitHub} \ \ \textemdash \ \ 
+\href{https://youtube.com/@swetank-mishra}{\faYoutube\ YouTube} \ \ \textemdash \ \ 
+\href{https://medium.com/@swetank-mishra}{\faMedium\ Medium}
+\end{center}
+\vspace{-10pt}
+\hrule
+\vspace{6pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rungta College of Engineering and Technology, Bhilai}{2024 – 2028}
+      {B.Tech - Computer Science and Engineering (AI)- \textbf{SPI} : \textbf{7.9}}{Bhilai, India}
+    \resumeSubheading
+      {New Standard Public School, Raebareli}{2024}
+      {Higher Secondary (PCM)- \textbf{82\%}}{Raebareli, India}
+  \resumeSubHeadingListEnd  
+  \vspace{4pt}
+  \hrule
+  \vspace{6pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+
+    % ---------- Project: AI Robot Emotion Classifier ----------
+    \resumeProjectHeading
+      {\faGithub\ \href{https://github.com/swetank-mishra/ai-robot-emotion-classifier}{\textbf{\large{AI Robot Emotion Classifier}}} \ \textbar\ \large{Python, Tkinter, PyQt, DeepFace, OpenCV, Pygame, Firebase}}{2026}
+      \resumeItemListStart     
+        \resumeItem{\normalsize{\textbf{Description:} Developed a real-time face detection and classification pipeline that maps human emotions to a robot face GUI.}}
+        \resumeItem{\normalsize{Implemented robust webcam facial landmarking and classification models using OpenCV and DeepFace libraries.}}
+        \resumeItem{\normalsize{Built interactive front-end visual responses in Tkinter/PyQt and integrated Pygame for synchronized auditory events.}}
+        \resumeItem{\normalsize{\textbf{Skills:} OpenCV, DeepFace, Python, Firebase, PyQt, Tkinter}}
+      \resumeItemListEnd
+      \vspace{-4pt}
+        
+    % ---------- Project: RAG Chatbot ----------
+    \resumeProjectHeading
+      {\faGithub\ \href{https://github.com/swetank-mishra/Rag---chatbot}{\textbf{\large{RAG Chatbot}}} \ \textbar\ \large{Python, LangChain, sklearn, FastAPI, CSS}}{2026}
+      \resumeItemListStart     
+        \resumeItem{\normalsize{\textbf{Description:} Engineered a Retrieval-Augmented Generation (RAG) chatbot capable of delivering precise, context-aware responses.}}
+        \resumeItem{\normalsize{Integrated LangChain and scikit-learn embeddings to construct high-performance vector databases for chunking and retrieval.}}
+        \resumeItem{\normalsize{\textbf{Skills:} Python, FastAPI, LangChain, Scikit-learn, Vector Stores}}
+      \resumeItemListEnd
+      \vspace{-4pt}
+
+    % ---------- Project: Message Spam Classifier ----------
+    \resumeProjectHeading
+      {\faGithub \ \href{https://github.com/swetank-mishra/spam-classifier}{\textbf{\large{Message Spam Classifier}}} \ \textbar \ \large{Python, Pandas, Streamlit, NLP, Scikit-learn}}{2026}
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Description:} Developed a machine learning pipeline to classify spam messages using advanced NLP preprocessing.}}
+        \resumeItem{\normalsize{Implemented a multi-head attention mechanism from scratch in Python to optimize text classification performance.}} 
+        \resumeItem{\normalsize{\textbf{Skills:} Python, NLP, Streamlit, Scikit-learn}}
+      \resumeItemListEnd 
+      \vspace{-4pt}
+      
+    % ---------- Project: Cortex-Lite ----------
+    \resumeProjectHeading
+      {\faGithub\ \href{https://github.com/swetank-mishra/cortex-lite}{\textbf{\large{Cortex-Lite AI}}} \ \textbar\ \large{Python, Google Gemini API, LangChain, Streamlit}}{2026}
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Description:} Created a lightweight conversational agent utilizing Gemini API for high-speed local processing.}}
+        \resumeItem{\normalsize{Designed stateful context conversational memory pipelines using LangChain frameworks and custom prompt templates.}}
+        \resumeItem{\normalsize{\textbf{Skills:} Python, LangChain, Gemini API, NLP, Streamlit}}
+      \resumeItemListEnd
+      \vspace{-4pt}
+
+    % ---------- Project: Retail Daily Revenue Analysis ----------
+    \resumeProjectHeading
+      {\faGithub\ \href{https://github.com/swetank-mishra/Retail-Daily-Revenue-Analysis}{\textbf{\large{Retail Daily Revenue Analysis}}} \ \textbar\ \large{Python, Pandas, NumPy, Matplotlib, Streamlit}}{2025}
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Description:} Conducted full exploratory data analysis (EDA) on retail records to identify sales patterns and seasonal growth factors.}}
+        \resumeItem{\normalsize{Cleaned and structured massive dataset tables using Python Pandas and NumPy libraries for streamlined reporting dashboard output.}}
+        \resumeItem{\normalsize{\textbf{Skills:} Pandas, NumPy, Data Analysis, Matplotlib, Streamlit}}
+      \resumeItemListEnd
+      \vspace{-2pt}
+
+\resumeSubHeadingListEnd
+\vspace{4pt}
+\hrule
+\vspace{6pt}
+
+%-----------ML LEARNINGS-----------
+\section{ML Learnings}
+\vspace{4pt}
+\begin{center}
+    \footnotesize
+    \href{https://youtu.be/p8RmWb3jE1U?si=-aJwxZSzdWbMSJPA}{Linear Regression \ \faYoutube} \ \ \textemdash\ \ 
+    \href{https://youtu.be/awGLlOKITAw?si=UrpeaClQFoeFxeVL}{Logistic Regression \ \faYoutube} \ \ \textemdash\ \ 
+    \href{https://youtu.be/02vHxY-44oo?si=uyjEZIsGKZxV-Jpt}{KNN \ \faYoutube} \ \ \textemdash\ \ 
+    \href{https://youtu.be/M2DbktLc3Ac?si=SOjqjN7iBXoSo6-l}{Decision Tree \ \faYoutube} \ \ \textemdash\ \ 
+    \href{https://youtu.be/UwwdIlF_7es?si=lBJusHwo0SxZyrTw}{Confusion Matrix \ \faYoutube}
+\end{center}
+\vspace{2pt}
+\hrule
+\vspace{6pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\vspace{4pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+\item \textbf{Languages:} Python,SQL,Html \\
+\textbf{Technologies:}  GitHub, Git, Streamlit, Gradio, Hugging Face \\
+\textbf{AI/ML Specialties:}  NPU Optimization , RAG , Local LLM Orchestration, PromptEngineering
+}
+\end{itemize}
+\vspace{2pt}
+\hrule
+\vspace{6pt}
+ 
+%-----------CERTIFICATIONS-----------
+\section{CERTIFICATIONS}
+\vspace{4pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}l}
+  $\sbullet[.75] \hspace{0.2cm}$ \href{https://www.skills.google/public_profiles/70974f9b-cef5-4e35-9a64-6fb9e39414a5/badges/19802155}{Google Arcade Badge} &
+  $\sbullet[.75] \hspace{0.2cm}$ \href{https://drive.google.com/file/d/17PtGQEwJpoqH6ySSoPMtwyJW9jdNHLU7/view?usp=sharing}{Microsoft AI Classroom} &
+  $\sbullet[.75] \hspace{0.2cm}$ \href{https://drive.google.com/file/d/1Rt885eRgNBZZgy6lvhqoX1TacR3XbV4l/view?usp=sharing}{Microsoft AI Classroom - ML} \\ [6pt]
+  $\sbullet[.75] \hspace{0.2cm}$ \href{https://drive.google.com/file/d/1dK5iTVEb8H0ReCZMQ1LwEif0VScojsvl/view?usp=sharing}{Coding Spoon - (AI/ML)} &
+  $\sbullet[.75] \hspace{0.2cm}$ \href{https://www.credly.com/users/vineetkush-pali}{Google Badges (20+)} &
+  $\sbullet[.75] \hspace{0.2cm}$ \href{https://learn.microsoft.com/en-us/users/me/achievements#badges-section.com}{Microsoft Badges} \\ [6pt]
+  \multicolumn{3}{l}{$\sbullet[.75] \hspace{0.2cm}$ \href{https://drive.google.com/file/d/1-Y0j8u4ISkuoPzqmlfhIbaVvPrY7JGQw/view?usp=sharing}{Infosys - MS Office}}
+\end{tabular*}
+\end{itemize}
+
+\vspace{2pt}
+
+\end{document}
