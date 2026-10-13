@@ -57,64 +57,9 @@ vineetkush-portfolio/
 │       └── Footer.tsx          # Copyright & Scroll back to top buttons
 ```
 
----
 
-## 🛠️ Local Development Setup
 
-To initialize and run this project locally, execute the following commands in your shell:
 
-```bash
-# 1. Clone the repository and change directories
-cd vineetkush-portfolio
-
-# 2. Install dependencies
-npm install
-
-# 3. Start local development environment
-npm run dev
-
-# 4. Compile typescript check & build client files for production
-npm run build
-```
-
----
-
-## 📦 Deployment Instructions
-
-### ⚡ Option 1: Vercel Deployment (Recommended)
-Vercel is the easiest place to deploy React and Vite sites.
-
-1. Install the Vercel CLI globally or run it via npx:
-   ```bash
-   npx vercel
-   ```
-2. Follow the command prompts to log in to your account.
-3. Link the project as a new project, select Vite settings (default detects and handles it), and choose build commands (`npm run build`) and output folders (`dist`).
-4. Click deploy and Vercel will build and assign you a public URL.
-
-### 🐙 Option 2: GitHub Pages Setup
-Deploying to GitHub pages can be done using the `gh-pages` build automation helper:
-
-1. Install `gh-pages` dependency in your project:
-   ```bash
-   npm install gh-pages --save-dev
-   ```
-2. Modify your `package.json` to configure the deployment pipeline:
-   - Add a `homepage` configuration at the root:
-     ```json
-     "homepage": "https://vineetkush57-debug.github.io/vineetkush-portfolio"
-     ```
-   - Add build scripts inside `"scripts"`:
-     ```json
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-     ```
-3. Update your `vite.config.ts` to support the correct subfolder base path:
-   ```typescript
-   export default defineConfig({
-     base: '/vineetkush-portfolio/', // Match your repo name
-     plugins: [react(), tailwindcss()],
-   })
    ```
 4. Execute deploy to push your static assets directly to your GitHub page:
    ```bash
